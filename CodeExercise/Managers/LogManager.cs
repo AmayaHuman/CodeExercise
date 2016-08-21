@@ -12,13 +12,15 @@ namespace CodeExercise.Managers
         public void LogAuthorization(LinkedinUser user)
         {
             //logic to log authorization would be here
+            //I would also consider loosely coupling the user parameter. 
 
             /*
-             * I prefer to keep code simple. I've seen architectures, where a manager would connect to a repository,
-             * which would then access the data. In many of those cases some levels were fluff and clutter.
-             * I say all that just to say that for this code example, I would probably connect to the DbContext from the manager.
+             * I prefer to keep code simple. I've seen architectures, where a the code drills down a bunch of levels 
+             * in order to access the data. Some levels were fluff and clutter, just passing values through.
+             * I say all that just to say that for this code example, I would probably connect to the DbContext from the LogManager.
              * 
-             * The DbContext (and related classes) would also 
+             * I would probably have the LogManager in a separate project to 
+             * (no references from view project to the data access layer.) 
              */
         }
     }

@@ -64,14 +64,13 @@ namespace CodeExercise.Controllers
         {
             //log user
             LogManager.LogAuthorization(user);
-            /**/
+            
 
+            //Prepare form
+            //The initial intent was to create a survey integrating the information from the Linkedin profile.
+            // Unfortunately, time wasn't on my side. :(
+            // So instead, we have a demonstration of the use of a partial view that is tied to a Model.
 
-
-
-            //prepare form
-
-            //
             return PartialView("BuildTeamSurveryWithCTA", user);
         }
 
@@ -85,7 +84,6 @@ namespace CodeExercise.Controllers
              * which I believe they want you to be a partner (or at least work with a partner)
              * in order to utilize their API for lead generation.
             \************************************************************************************************************/
-            //
 
             return PartialView("ThankYou");
         }
