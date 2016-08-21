@@ -1,0 +1,82 @@
+﻿*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 600px;
+}
+
+.body-content {
+    border: 2px solid #d7d7f1;
+    padding: 15px;
+}
+
+.user-card {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.subtitle {
+    color: #666666;
+    font-style:italic;
+}
+
+.request-signin {
+    text-align:center;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.profile-image {
+    float:left;
+    margin-right: 15px;
+
+}
+.profile-image:after {
+    content: " ";
+    clear: both;
+
+}
+
+.name-field + .email-field {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.button {
+    min-height: 20px;
+    min-width: 250px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: #d7d7f1;
+    border: 2px solid #10137f;
+
+    font-weight:bold;
+    color: #10137f;
+}
+
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you h2 {
+    margin-top: 0px;
+}

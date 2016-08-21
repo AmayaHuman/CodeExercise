@@ -1,0 +1,15 @@
+﻿@model CodeExercise.Models.LinkedinUser
+
+
+    <div class="user-card">
+        @if (!String.IsNullOrWhiteSpace(Model.PictureUrl))
+        {
+            <img class="profile-image" src="@Model.PictureUrl" />
+        }
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "name-field" })
+        @Html.TextBoxFor(m => m.LastName, new { @class = "name-field" })
+        @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-field"  })
+
+        <a id="request-consultation" href="#" class="button">Request Consultation</a>
+    </div>
+    
